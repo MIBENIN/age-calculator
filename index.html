@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card-container">
+    <form action="#" class="input-form">
+      <div>
+        <label for="day" class="label-group error">DAY</label>
+        <input type="text" name="Day" id="day" class="input-group" placeholder="DD">
+        <p class="msg"></p>
+      </div>
+      
+      <div>
+        <label for="month" class="label-group error">MONTH</label>
+        <input type="text" name="month" id="month" class="input-group" placeholder="MM">
+        <p class="msg"></p>
+      </div>
+
+      <div>
+        <label for="year" class="label-group error">YEAR</label>
+        <input type="text" name="year" id="year" class="input-group" placeholder="YYYY">
+        <p class="msg"></p>
+      </div>
+
+      <button type="button" id="submit"><img src="./assets/images/icon-arrow.svg" alt="arrow" class="arrow"></button>
+
+    </form>
+    <div class="output-section">
+      <h2><span id="outputYear">--</span> years</h2>
+      <h2><span id="outputMonth">--</span> months</h2>
+      <h2><span id="outputDay">--</span> days</h2>
+    </div>
+  </div>
+  
+  <div>Coded by Benin S🙃</div>
+   <script src="script.js"></script>
+</body>
+</html>

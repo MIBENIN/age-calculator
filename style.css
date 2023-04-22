@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+    --fw-400:400;
+    --fw-700:700;
+    --fw-800:800;
+}
+
+body{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+    background-color: var(--Off-white);
+    padding:2em 0;
+}
+.card-container{
+    width:90%;
+    max-width: 750px;
+    background-color: var(--White);
+    border-radius: 1em 1em 8em 1em;
+    padding: 2em;
+}
+.input-form{
+    display: flex;
+    gap:1em;
+    align-items: center;
+    position: relative;
+    padding-bottom: 4em;
+    border-bottom: .1em solid var(--Light-grey)
+}
+.input-group{
+    display:block;
+    width:6rem;
+    font-size:1.4rem;
+    padding: .2em .5em;
+    font-weight:var(--fw-700);
+    border:1px solid var(--Light-grey);
+    border-radius: .2em;
+    position: relative;
+}
+
+.input-group:focus{
+    border:1px solid var(--Off-black);
+    outline: none;
+}
+
+.label-group{
+    font-size: .8rem;
+    display: block;
+    margin-bottom: .5em;
+    font-weight:var(--fw-400);
+    letter-spacing: .1em;
+}
+#submit{
+    width:3.5rem;
+    height:3.5rem;
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--Purple);
+    cursor: pointer;
+    bottom:-2em;
+    right:50%;
+    transform: translateX(50%);
+}
+#submit:hover{
+    background-color: var(--Off-black);
+}
+.msg{
+    color:var(--Light-red);
+    font-size: .5rem;
+    position: absolute;
+    width:fit-content
+}
+.arrow{
+    width:1.5rem;
+    height:1.5rem;
+}
+.output-section{
+    margin-top: 3em;
+}
+
+h2{
+    font-size: 3rem;
+    color:var(--Off-black);
+    font-weight:var(--fw-800);
+}
+
+span{
+    color:var(--Purple);
+    letter-spacing: .2em;
+}
+@media screen and (min-width:650px){
+    .input-group{
+        width:7rem;
+    }
+    .input-form{
+        gap:1.5em;
+    }
+    h2{
+        font-size: 5rem;
+    }
+    #submit{
+        right:0;
+        transform: translateX(0);
+    }
+    .msg{
+        font-size: .7rem;
+    }
+}
